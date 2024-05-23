@@ -25,7 +25,7 @@ yarn add @nodesleep/ts-utils
 ## Usage
 ### Type Guards
 ```Javascript
-import { isString, isNumber } from '@nodesleep/ts-toolkit/typeGuards';
+import { isString, isNumber } from '@nodesleep/ts-utils';
 
 const value: unknown = 'hello';
 if (isString(value)) {
@@ -39,7 +39,7 @@ if (isNumber(anotherValue)) {
 ```
 ### Utility Types
 ```Javascript
-import { DeepPartial, Nullable } from '@nodesleep/ts-toolkit/utilityTypes';
+import { DeepPartial, Nullable } from '@nodesleep/ts-utils';
 
 type ExampleType = {
   name: string;
@@ -51,7 +51,7 @@ const nullableExample: Nullable<string> = null;
 ```
 ### Assertion Functions
 ```Javascript
-import { assertIsString, assertIsNumber } from '@nodesleep/ts-toolkit/assertionFunctions';
+import { assertIsString, assertIsNumber } from '@nodesleep/ts-utils';
 
 const someValue: unknown = 'hello';
 assertIsString(someValue);
@@ -63,7 +63,7 @@ console.log(`The value is a number: ${anotherValue}`);
 ```
 ### Data Validation
 ```Javascript
-import { validateObject, validateArray } from '@nodesleep/ts-toolkit/dataValidation';
+import { validateObject, validateArray } from '@nodesleep/ts-utils';
 
 const schema = {
   name: (value: unknown): value is string => typeof value === 'string',
@@ -83,7 +83,7 @@ if (validateObject(person, schema)) {
 ```
 ### Common Helpers
 ``` Javascript
-import { deepClone, mergeObjects, flattenArray } from '@nodesleep/ts-toolkit/commonHelpers';
+import { deepClone, mergeObjects, flattenArray } from '@nodesleep/ts-utils';
 
 const obj1 = { a: 1 };
 const obj2 = { b: 2 };

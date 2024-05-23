@@ -1,0 +1,27 @@
+{
+  "name": "@nodesleep/ts-utils",
+  "version": "1.0.0",
+  "description": "A collection of useful utility functions and types for TypeScript developers.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["typescript", "utilities", "helpers", "type guards", "validation"],
+  "author": "Aron Sweet",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodesleep/ts-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/nodesleep/ts-utils/issues"
+  },
+  "homepage": "https://github.com/nodesleep/ts-utils#readme",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
